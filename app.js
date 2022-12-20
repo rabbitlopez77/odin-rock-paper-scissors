@@ -1,6 +1,7 @@
 let computerResult = '';
 let playerResult = '';
-
+computerRound = 0;
+playerRound = 0;
 const getComputerChoice = () => {
     let result = (Math.floor(Math.random() * 3));
     if(result == 0){
@@ -40,8 +41,12 @@ const results =()=> {
         winner = "Draw"
     }
     alert('The result is...'+ winner + 'The Computer chose: ' + computerResult + ' Your choice: ' + playerResult + '. ')
-    computerResult = '';
-    playerResult = '';
+    if(winner === 'The Computer Beat You!'){
+        computerRound += 1
+    }else if(winner === "You Won!"){
+        playerRound+= 1
+    }
     
-    
+   return( computerResult = '',
+    playerResult = '')
 }

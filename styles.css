@@ -1,25 +1,48 @@
+h1 {
+    text-align: center;
+    text-shadow: 1px 1px 2px red;
+    animation: mymove 5s infinite;
+}
+@keyframes mymove {
+    50% {color: rgb(0, 17, 255);}
+  }
+body {
+    background-color: grey;
+}
 .app {
-    border-style: solid;
     text-align: center;
 }
 .computerChoice {
-    background-color: green;
+    background-color: transparent;
 }
 .computerChoice:hover {
-    background-color: blue;
-    transition-duration: 1s;
+    background-color: transparent;
 }
 .rock {
-    background-color: gray;
-    text-align: center;
+    background-color: transparent;
 }
 .paper {
-    background-color: white;
+    background-color: transparent;
 }
 .scissors {
-    background-color: rgb(68, 68, 68);
+    background-color: transparent;
+}
+.result {
+    background-color: transparent
 }
 img {
     height: 100px;
+    border-radius: 10px;
 
 }
+img:hover{ 
+    transform: rotate(360deg);
+    transition-duration: 4s;
+} 
+h2 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+    

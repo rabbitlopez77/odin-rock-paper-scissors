@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,12 @@
 </head>
 <body>
     <script type = "text/javascript" src="app.js"></script>  
-    <input type = "button" onclick = "getComputerChoice()" value = "Click Me">
-    <input type="button" onclick="playerChoice('rock')" value="Rock">
-    <input type="button" onclick="playerChoice('paper')" value="Paper">
-    <input type="button" onclick="playerChoice('scissors')" value="Scissors">
-    <input type="button" onclick="results()" value="Result">
+    <div class="app">
+        <button class="computerChoice" onclick = "getComputerChoice()">ComputerChoice</button>
+        <button class="rock" onclick="playerChoice('rock')">Rock</button>
+        <button class="paper" onclick="playerChoice('paper')">Paper</button>
+        <button class="scissors" onclick="playerChoice('scissors')">Scissors</button>
+        <button class="result" onclick="results()">Result</button>
+    </div>
 </body>
 </html>

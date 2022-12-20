@@ -1,0 +1,20 @@
+.app {
+    border-style: solid;
+    text-align: center;
+}
+.computerChoice {
+    background-color: green;
+}
+.computerChoice:hover {
+    background-color: blue;
+    transition-duration: 1s;
+}
+.rock {
+    background-color: gray;
+}
+.paper {
+    background-color: white;
+}
+.scissors {
+    background-color: rgb(68, 68, 68);
+}

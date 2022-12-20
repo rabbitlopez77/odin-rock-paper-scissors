@@ -40,6 +40,8 @@ const results =()=> {
         winner = "Draw"
     }
     alert('The result is...'+ winner + 'The Computer chose: ' + computerResult + ' Your choice: ' + playerResult + '. ')
+    computerResult = '';
+    playerResult = '';
     
     
 }

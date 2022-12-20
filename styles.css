@@ -11,10 +11,15 @@
 }
 .rock {
     background-color: gray;
+    text-align: center;
 }
 .paper {
     background-color: white;
 }
 .scissors {
     background-color: rgb(68, 68, 68);
+}
+img {
+    height: 100px;
+
 }

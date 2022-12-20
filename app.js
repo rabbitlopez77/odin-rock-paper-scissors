@@ -17,7 +17,10 @@ const playerChoice =(choice)=>{
 }
 const results =()=> {
     let winner = '';
-    if(computerResult == 'rock' && playerResult == 'rock'){
+    if(computerResult === '' || playerResult === ''){
+       return alert("Please make sure you made a choice and that the computer made a choice")
+    }
+    else if(computerResult == 'rock' && playerResult == 'rock'){
         winner = 'Draw'
     }else if(computerResult == 'rock' && playerResult == 'paper'){
         winner = 'You Won!'
@@ -36,7 +39,7 @@ const results =()=> {
     }else if(computerResult == 'scissors' && playerResult == 'scissors'){
         winner = "Draw"
     }
-    alert('The Computer chose: ' + computerResult + ' Your choice: ' + playerResult + '. ' + 'The result is...'+ winner)
+    alert('The result is...'+ winner + 'The Computer chose: ' + computerResult + ' Your choice: ' + playerResult + '. ')
     
     
 }

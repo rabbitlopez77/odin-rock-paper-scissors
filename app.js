@@ -58,11 +58,13 @@ const results =()=> {
     playerResult = '')
 }
 const game=()=>{
-    if(computerRound == 5 || playerRound == 5){
+    if(computerRound == 5){
         computerRound = 0;
         playerRound = 0;
-        document.getElementById('computerRound').innerHTML= computerRound;
-        document.getElementById('playerRound').innerHTML= playerRound;
-        alert('Game Over')
+        document.getElementById('computerRound').innerHTML= 'You Lost in the Best of 5!'
+    }else if(playerRound == 5){
+        computerRound = 0;
+        playerRound = 0;
+        document.getElementById('playerRound').innerHTML= 'You Won in the Best of 5!'
 }
 }
